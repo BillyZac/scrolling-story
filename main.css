@@ -9,7 +9,7 @@ body {
 }
 
 .bg {
-  background-color: tomato;
+  background-color: #222;
   background-image: url('http://lorempixel.com/1600/1600');
   position: fixed;
   width: 10000px;
@@ -19,15 +19,27 @@ body {
   z-index: -1;
 }
 
+
+.move-me-not,
 .move-me,
 .move-me-2 {
   position: absolute;
   width: 80px;
   height: 80px;
+  box-shadow:         -1px -1px 3px 0px rgba(50, 50, 50, 0.75);
+}
+
+.move-me-not {
+  background-color: gray;
+  top: 100px;
+}
+
+.move-me {
   background-color: aqua;
+  top: 120px;
 }
 
 .move-me-2 {
-  background-color: blue;
-  top: 200px;
+  background-color: tomato;
+  top: 140px;
 }
